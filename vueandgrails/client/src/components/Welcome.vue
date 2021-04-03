@@ -68,6 +68,7 @@
 
     <div id="content" role="main">
       <section class="row colset-2-its">
+        <router-link to="/hello" tag="button">NavigationTest</router-link>
         <h1>Welcome to Grails</h1>
 
         <p>
@@ -81,7 +82,6 @@
         <div id="controllers" role="navigation">
           <h2>Available Controllers:</h2>
           <ul v-if="serverInfo">
-
             <li v-if="serverInfo.controllers" v-for="controller in serverInfo.controllers" :key="controller.name">
               <a :href="serverURL + '/' + controller.logicalPropertyName">{{controller.name }}</a></li>
           </ul>
@@ -95,6 +95,8 @@
 </template>
 
 <script>
+import apiurl from '../Utils/apiurl'
+
 export default {
   name: 'Welcome',
   data () {
@@ -111,10 +113,11 @@ export default {
     }
   },
   created: function () {
-    fetch(`${this.$data.serverURL}/application`)
+    fetch(`${apiurl}/application`)
       .then(response => response.json())
       .then(json => {
         this.serverInfo = json
+        console.log(apiurl)
       })
   }
 }
