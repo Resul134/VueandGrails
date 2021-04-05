@@ -1,4 +1,4 @@
-export default class Vehicle {
+export default interface Vehicle {
     id: Number
     name: String
     make: {

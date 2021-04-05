@@ -9,13 +9,13 @@
         <th>Driver</th>
       </tr>
     </thead> 
-      <table-row v-for="vehicle in vehicles"
-                 :item="vehicle" :key="vehicle.id"></table-row> 
+      <TableRow v-for="vehicle in vehicles"
+                 :item="vehicle" :key="vehicle.id"></TableRow> 
   </table>
 </template>
 
 <script>
-import TableRow from './TableRow.vue' 
+import TableRow from '../TableRow.vue'
 
 export default {
   props: {

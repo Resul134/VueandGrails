@@ -10,13 +10,12 @@
 
 <script>
 export default {
+  /* eslint-disable */
   props: {
       item: Object
   } 
 }
 </script>
 
-<!-- Per Component Custom CSS Rules -->
 <style>
-  /* Add custom rules here */
 </style>

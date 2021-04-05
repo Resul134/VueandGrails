@@ -68,7 +68,7 @@
 
     <div id="content" role="main">
       <section class="row colset-2-its">
-        <router-link to="/hello" tag="button">NavigationTest</router-link>
+        <router-link to="/hello" tag="button" class="navi-button">NavigationTest</router-link>
         <h1>Welcome to Grails</h1>
 
         <p>
@@ -137,6 +137,12 @@ export default {
 
   .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background-color: #e7e7e7;
+  }
+  .navi-button{
+      border-radius: 7px;
+      background-color:#333333;
+      color: white;
+      font: bold;
   }
 
   button span.caret {
