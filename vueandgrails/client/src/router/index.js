@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'Garage',
-      component: Garage 
+      component: Garage
     },
     {
       path: '/Hello',

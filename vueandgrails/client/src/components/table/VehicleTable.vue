@@ -8,20 +8,18 @@
         <th>Model</th>
         <th>Driver</th>
       </tr>
-    </thead> 
-      <TableRow v-for="vehicle in vehicles"
-                 :item="vehicle" :key="vehicle.id"></TableRow> 
+    </thead>
+      <TableRow v-for="vehicle in vehicles" :item="vehicle" :key="vehicle.id"></TableRow>
   </table>
 </template>
-
 <script>
 import TableRow from '../TableRow.vue'
 
 export default {
   props: {
-      vehicle: Array
+    vehicles: Array
   },
-  components: { 
+  components: {
     TableRow
   }
 }
