@@ -1,16 +1,24 @@
 <template>
   <div id="app">
+    <div class="header-front-page">
+      <Header></Header>
+    </div>
     <router-view/>
     <!-- <Welcome></Welcome> -->
   </div>
 </template>
 
 <script>
-// import Welcome from './components/Welcome.vue';
+import Header from './components/Header'
 export default {
-  name: 'App'
-  // components: {
-  //   Welcome
-  // }
+  name: 'App',
+  components: {
+    Header
+  }
 }
 </script>
+<style scoped>
+.header-front-page{
+  text-align: center;
+}
+</style>

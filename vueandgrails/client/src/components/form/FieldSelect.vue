@@ -11,7 +11,10 @@
 
 <script>
 export default {
-  props: ['values', 'field'],
+  props: {
+    values: [],
+    field: ''
+  },
   data: function () {
     return {
       selected: null

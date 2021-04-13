@@ -1,6 +1,5 @@
 <template>
   <div id="garage">
-    <Header></Header>
     <VehicleForm v-model="vehicle"
                   :makes="makes"
                   :models="models"

@@ -13,6 +13,7 @@ import './assets/css/main.css'
 
 Vue.config.productionTip = false
 
+Vue.use(require('vue-moment'))
 Vue.use(uiv)
 Vue.use(Vuex)
 /* eslint-disable no-new */
