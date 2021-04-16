@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     count: 0,
-    test: false
+    test: false,
+    item: null
   },
   mutations: {
     increment (state) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     },
     test (state, payload) {
       state.test = payload
+    },
+    item (state, payload) {
+      state.item = payload
     }
   }
 })

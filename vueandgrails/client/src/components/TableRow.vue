@@ -1,5 +1,5 @@
 <template id="tablerow-template" xmlns="http://www.w3.org/1999/xhtml">
-    <tr> <!-- 1 -->
+    <tr @click="navigateToHello(item)"> <!-- 1 -->
       <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
       <td>{{ item.make.name }}</td>
@@ -13,7 +13,14 @@ export default {
   /* eslint-disable */
   props: {
       item: Object
-  } 
+  },
+  methods: {
+    navigateToHello(item) {
+      this.$router.push('Hello')
+      this.$store.commit('item',item)
+      console.log(item)
+    }
+  },
 }
 </script>
 
