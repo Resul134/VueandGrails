@@ -2,7 +2,11 @@
     <tr @click="navigateToHello(item)"> <!-- 1 -->
       <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
-      <td>{{ item.make.name }}</td>
+      <td>{{ item.make.name}}</td>
+      <div v-if="!item.make.year" style="text-align: left;">
+          Vehicle year unknown
+      </div>
+      <td v-else>{{ item.make.year }}</td>
       <td>{{ item.model.name }}</td>
       <td>{{ item.driver.name }}</td>
     </tr>
@@ -21,6 +25,9 @@ export default {
       console.log(item)
     }
   },
+  mounted () {
+    console.log(this.item.make.year)
+  }
 }
 </script>
 

@@ -20,6 +20,11 @@
               <div class="itemdisplay">{{ item.make.name }}</div>
           </div>
           <div class="info">
+              <h3>Year:</h3>
+              <div class="itemdisplay" v-if="item.make.year">{{ item.make.year }}</div>
+              <div class="itemdisplay" v-else>Year unknown</div>
+          </div>
+          <div class="info">
               <h3>Model:</h3>
               <div class="itemdisplay">{{ item.model.name }}</div>
           </div>
@@ -31,7 +36,6 @@
         </div>
         <div class="col-sm-5">
         </div>
-    </div>
 </div>
 </template>
 <script>

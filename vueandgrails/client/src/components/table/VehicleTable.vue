@@ -5,6 +5,7 @@
         <th>ID</th>
         <th>Name</th>
         <th>Make</th>
+        <th>Year</th>
         <th>Model</th>
         <th>Driver</th>
       </tr>
