@@ -14,8 +14,8 @@ class BootStrap {
         Driver driver1 = driverDataService.save("Susan")
         Driver driver2 = driverDataService.save("Pedro")
 
-        Make nissan = makeDataService.save("Nissan", year: 1987)
-        Make ford = makeDataService.save("Ford", year: 1999)
+        Make nissan = makeDataService.save("Nissan", 1987)
+        Make ford = makeDataService.save("Ford", 1999)
 
         Model titan = modelDataService.save("Titan")
         Model leaf = modelDataService.save("Leaf")
