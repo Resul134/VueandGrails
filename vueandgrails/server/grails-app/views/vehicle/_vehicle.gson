@@ -9,7 +9,8 @@ json {
     name vehicle.name
 
     make name: vehicle.make.name,
-        id: vehicle.make.id
+        id: vehicle.make.id,
+        year: vehicle.make.year
 
     model name: vehicle.model.name,
             id: vehicle.model.id

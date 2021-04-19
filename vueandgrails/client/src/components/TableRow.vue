@@ -3,6 +3,7 @@
       <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
       <td>{{ item.make.name }}</td>
+      <td>{{ item.make.year }}</td>
       <td>{{ item.model.name }}</td>
       <td>{{ item.driver.name }}</td>
     </tr>

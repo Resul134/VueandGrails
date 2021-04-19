@@ -44,7 +44,6 @@ export default {
   data () {
     return {
       serverURL: process.env.SERVER_URL,
-      HelloText: 'This is an example page for routing',
       item: null
     }
   },
@@ -55,6 +54,7 @@ export default {
   },
   mounted () {
     this.item = this.$store.state.item
+    console.log(this.item.make)
   }
 
 }
