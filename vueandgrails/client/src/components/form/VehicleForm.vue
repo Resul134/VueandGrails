@@ -47,12 +47,10 @@ export default {
   methods: {
     submit () { 
       this.$emit('submit')
-      // vuex store text
       this.$store.commit('test', false)
       console.log(this.$store.state.test)
       this.$store.commit('test', true)
       console.log(this.$store.state.test)
-      // vuex store test
     }
   }
 }
