@@ -1,7 +1,7 @@
 <template id="app-header-template">
   <div class="container">
     <div class="adjustment">
-      <img src="../assets/edora.png">
+      <img src="../assets/logo.png">
       <br>
       <div class="clock">{{ clock }}</div>
     </div>
